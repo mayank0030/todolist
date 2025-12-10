@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Simple To-Do</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, Arial; max-width: 700px; margin: 30px auto; padding: 0 16px; }
+    h1 { text-align: center; }
+    .todo-input { display:flex; gap:8px; margin-bottom: 12px; }
+    input[type="text"] { flex:1; padding:8px 10px; font-size:16px; }
+    button { padding:8px 12px; font-size:14px; cursor:pointer; }
+    ul { list-style:none; padding:0; }
+    li { display:flex; align-items:center; gap:8px; padding:8px; border-bottom:1px solid #eee; }
+    li.done { text-decoration: line-through; color: #888; }
+    .spacer { flex:1; }
+    .small { font-size: 13px; padding:6px 8px; }
+  </style>
+</head>
+<body>
+  <h1>Simple To-Do</h1>
+
+  <div class="todo-input">
+    <input id="newTask" placeholder="Add new task and press Add" />
+    <button id="addBtn">Add</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <script src="main.js"></script>
+</body>
+</html>
